@@ -1,0 +1,195 @@
+:root {
+    --color-principal: #09284b;
+    --color-secundario: #5485A9;
+    --color-tercero: #ffffff;
+    --cuarto-color: #000000;
+    --color-textos: #3f4a56;
+    --color-fondo:#a0b8ca;
+    --color-fondo2: #e9ecee;
+    --color-fondo3: rgb(242,242,242);
+    --estilo-letra-pagina: 'Franklin Gothic Medium';
+    --estilo-letra-pagina-2: 'Times New Roman';
+    --estilo-letra-pagina-3: 'Sans Serif';
+}
+/* BODY */
+body {
+    
+    background-color:var(--color-principal);
+    font-family: Franklin Gothic Medium', 'Arial Narrow;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, white);
+    background-size: 400% 400%;
+    animation: moverDegradado 15s ease infinite;
+    
+    h1 {font-family: 'Times New Roman', Times, serif;
+        p {font-size: medium; font-weight: normal;}
+        span {line-height: 2;}
+        ul {font-size: medium; font-weight: normal;}
+    }
+
+}
+
+@keyframes moverDegradado {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    } 
+}
+/* HEAD */
+head{
+
+    background-color: #a0b8ca;
+}
+
+.headprincipal {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 125px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+}
+.contenedor_headtexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+#textofrase {
+    display: flex;
+    color: var(--color-textos);
+    margin: 0;
+    line-height: 1;
+
+}
+
+/* HEADER */
+header { 
+    background-color: var(--color-principal);
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+/* HEADER NAV */
+.navcontent {
+    gap: 100px;
+    font-family:'Times New Roman', Times, serif;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.navcontent a {
+    color: var(--color-tercero);
+    text-decoration: none;
+    padding: 20px 10px;
+    display: block;
+}
+
+.navcontent a:hover {
+    color: var(--color-tercero);
+    background-color: var(--color-secundario);
+}
+
+/* HASIERA */
+.contenedoprincipal{
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    background-color: var(--color-principal);
+    color: var(--color-tercero);
+    padding: 40px 10%;
+    font-family: sans-serif;
+}
+
+/* 3 columnas */
+.footer-contenido {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-columna h3 {
+    color: var(--color-secundario);
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.footer-columna p {
+    color: var(--color-tercero);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/*NABEGAZIO MENUA*/
+.footer-columna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-columna ul li {
+    margin-bottom: 8px;
+}
+
+.footer-columna ul li a {
+    color: var(--color-tercero);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.footer-columna ul li a:hover {
+    color: var(--color-secundario);
+}
+
+/* FOOTER LERROA */
+.footer-linea {
+    border: none;
+    border-top: 1px solid;
+    color: var(--color-textos);
+    margin: 30px 0 20px 0;
+}
+
+/* TESTU FINALA ZENTRATUTA  */
+.footer-copyright {
+    text-align: center;
+    color: var(--color-tercero);
+    font-size: 0.9SSSSsrem;
+}
+
+.footer-copyright img {
+    vertical-align: middle; 
+}
